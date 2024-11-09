@@ -1,6 +1,5 @@
 import './App.css'
 import React, { Component } from "react";
-
 class App extends Component {
   constructor(props) {
     super(props);
@@ -12,11 +11,11 @@ class App extends Component {
       segundos: 0,
       currentImageIndex: 0,
       images: [
-        './public/img-1.png',
-        './public/img-2.png',
-        './public/img-3.png',
-        './public/img-4.png',
-        './public/img-5.png',
+        './img-1.png',
+        './img-2.png',
+        './img-3.png',
+        './img-4.png',
+        './img-5.png',
       ],
     };
   }
@@ -64,7 +63,7 @@ class App extends Component {
     return (
       <div className="pagina">
         <video autoPlay muted loop id="bg-video">
-          <source src="/public/video-1.mp4" type="video/mp4" />
+          <source src="/video-1.mp4" type="video/mp4" />
         </video>
         <div className="img">
           <img src={images[currentImageIndex]} alt={`Imagem ${currentImageIndex + 1}`} />
