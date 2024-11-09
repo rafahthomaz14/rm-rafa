@@ -12,11 +12,11 @@ class App extends Component {
       segundos: 0,
       currentImageIndex: 0,
       images: [
-        './src/img-1.png',
-        './src/img-2.png',
-        './src/img-3.png',
-        './src/img-4.png',
-        './src/img-5.png',
+        './public/img-1.png',
+        './public/img-2.png',
+        './public/img-3.png',
+        './public/img-4.png',
+        './public/img-5.png',
       ],
     };
   }
@@ -64,7 +64,7 @@ class App extends Component {
     return (
       <div className="pagina">
         <video autoPlay muted loop id="bg-video">
-          <source src="/src/video-1.mp4" type="video/mp4" />
+          <source src="/public/video-1.mp4" type="video/mp4" />
         </video>
         <div className="img">
           <img src={images[currentImageIndex]} alt={`Imagem ${currentImageIndex + 1}`} />
