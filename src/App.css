@@ -1,0 +1,43 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+
+}
+.nome{
+  margin-left: 280px;
+}
+button {
+  width: 180px;
+  height: 40px;
+  margin-bottom: 10px;
+  border-radius: 20px;
+  font-size: 1.2em;
+
+}
+
+#bg-video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+  object-fit: cover;
+}
+
+@media(max-width:600px) {
+  .h1 {
+    font-size: 2px;
+  }
+  .nome{
+    margin-left: 140px;
+  }
+  p {
+    font-size: 20px;
+    color: white;
+    text-align: justify;
+  }
+  
+}
